@@ -25,19 +25,19 @@ graph TD
 
 ## 📋 Topics Covered
 
-| File | Topic | Key Concepts |
-|------|-------|--------------|
-| `topic1_variables_and_datatypes.py` | Variables & Data Types | str, int, float, bool, None, f-strings, ternary |
-| `topic2_operators_and_expressions.py` | Operators & Expressions | Arithmetic, comparison, logical, identity, membership |
-| `topic3_control_flow.py` | Control Flow | if/elif/else, for, while, break, continue, match |
-| `topic4_functions.py` | Functions | Type hints, default params, *args, **kwargs, docstrings |
-| _coming soon_ | Data Structures | list, tuple, dict, set |
-| _coming soon_ | OOP | Classes, inheritance, super(), __str__ |
-| _coming soon_ | Error Handling | try/except/else/finally, custom exceptions |
-| _coming soon_ | File Handling | open, read, write, JSON |
-| _coming soon_ | Modules & Packages | import, __init__.py, project structure |
-| _coming soon_ | Venv & pip | virtualenv, pip, requirements.txt |
-| _coming soon_ | Clean Code | DRY, SRP, list comprehensions, Optional |
+| Status | File | Topic | Key Concepts |
+|:---:|------|-------|--------------|
+| ✅ | `topic1_variables_and_datatypes.py` | Variables & Data Types | str, int, float, bool, None, f-strings, ternary |
+| ✅ | `topic2_operators_and_expressions.py` | Operators & Expressions | Arithmetic, comparison, logical, identity, membership |
+| ✅ | `topic3_control_flow.py` | Control Flow | if/elif/else, for, while, break, continue, match |
+| ✅ | `topic4_functions.py` | Functions | Type hints, default params, *args, **kwargs, docstrings |
+| ⏳ | _coming soon_ | Data Structures | list, tuple, dict, set |
+| ⏳ | _coming soon_ | OOP | Classes, inheritance, super(), __str__ |
+| ⏳ | _coming soon_ | Error Handling | try/except/else/finally, custom exceptions |
+| ⏳ | _coming soon_ | File Handling | open, read, write, JSON |
+| ⏳ | _coming soon_ | Modules & Packages | import, __init__.py, project structure |
+| ⏳ | _coming soon_ | Venv & pip | virtualenv, pip, requirements.txt |
+| ⏳ | _coming soon_ | Clean Code | DRY, SRP, list comprehensions, Optional |
 
 ---
 
@@ -71,6 +71,14 @@ python topic1_variables_and_datatypes.py
 - **f-strings** for formatting
 - **Indentation** (consistent 4 spaces)
 - **venv always** (never work globally)
+
+---
+
+## 📚 Useful Resources
+
+- [Official Python Documentation](https://docs.python.org/3/)
+- [FastAPI Documentation](https://fastapi.tiangolo.com/)
+- [PEP 8 Style Guide](https://peps.python.org/pep-0008/)
 
 ---
 
