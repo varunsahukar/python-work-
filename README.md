@@ -39,6 +39,17 @@ graph TD
 | ⏳ | _coming soon_ | Venv & pip | virtualenv, pip, requirements.txt |
 | ⏳ | _coming soon_ | Clean Code | DRY, SRP, list comprehensions, Optional |
 
+## 📂 Project Structure
+
+```text
+python-work/
+├── topic1_variables_and_datatypes.py
+├── topic2_operators_and_expressions.py
+├── topic3_control_flow.py
+├── topic4_functions.py
+└── README.md
+```
+
 ---
 
 ## 🛠️ Setup
@@ -85,3 +96,9 @@ python topic1_variables_and_datatypes.py
 ## 🚀 Goal
 
 Complete Python foundation → **FastAPI Ready!** 🚀
+
+---
+
+## 📜 License
+
+This project is open-source and available under the [MIT License](LICENSE).
