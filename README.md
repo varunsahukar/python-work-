@@ -10,8 +10,8 @@ A structured Python revision covering all core concepts needed before learning F
 |------|-------|--------------|
 | `topic1_variables_and_datatypes.py` | Variables & Data Types | str, int, float, bool, None, f-strings, ternary |
 | `topic2_operators_and_expressions.py` | Operators & Expressions | Arithmetic, comparison, logical, identity, membership |
-| _coming soon_ | Control Flow | if/elif/else, for, while, break, continue |
-| _coming soon_ | Functions | Type hints, default params, *args, **kwargs, docstrings |
+| `topic3_control_flow.py` | Control Flow | if/elif/else, for, while, break, continue, match |
+| `topic4_functions.py` | Functions | Type hints, default params, *args, **kwargs, docstrings |
 | _coming soon_ | Data Structures | list, tuple, dict, set |
 | _coming soon_ | OOP | Classes, inheritance, super(), __str__ |
 | _coming soon_ | Error Handling | try/except/else/finally, custom exceptions |
