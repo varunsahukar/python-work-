@@ -4,7 +4,26 @@ A structured Python revision covering all core concepts needed before learning F
 
 ---
 
-## Topics Covered
+## 🗺️ Learning Roadmap
+
+```mermaid
+graph TD
+    1(1. Variables & Data Types<br/>str, int, float, bool, None, f-strings) --> 2(2. Operators & Expressions<br/>Arithmetic, logical, identity, membership)
+    2 --> 3(3. Control Flow<br/>if/elif/else, for, while, break, continue)
+    3 --> 4(4. Functions<br/>Type hints, *args, **kwargs, docstrings)
+    4 --> 5(5. Data Structures<br/>list, tuple, dict, set)
+    5 --> 6(6. OOP<br/>Classes, inheritance, super, __str__)
+    6 --> 7(7. Error Handling<br/>try/except/else/finally, custom exceptions)
+    7 --> 8(8. File Handling<br/>open, read, write, append, JSON)
+    8 --> 9(9. Modules & Packages<br/>import, from, __init__.py, structure)
+    9 --> 10(10. Venv & pip<br/>venv, pip install, requirements.txt)
+    10 --> 11(11. Pythonic Code & Clean Code Principles<br/>List comprehensions, DRY, SRP, type hints, Optional, meaningful names)
+    11 --> 12{FastAPI Ready! 🚀}
+```
+
+---
+
+## 📋 Topics Covered
 
 | File | Topic | Key Concepts |
 |------|-------|--------------|
@@ -22,7 +41,7 @@ A structured Python revision covering all core concepts needed before learning F
 
 ---
 
-## Setup
+## 🛠️ Setup
 
 ```bash
 # Clone the repo
@@ -40,18 +59,21 @@ python topic1_variables_and_datatypes.py
 
 ---
 
-## Key Habits Built
+## ✨ Key Habits Built Today
 
-- Always use **type hints** on every variable and function
-- Always use **f-strings** for string formatting
-- Always use **snake_case** for variable and function names
-- Always use `is` / `is not` for **None checks**
-- Always use **docstrings** on every function
-- Always **return** from functions, never just print
-- Always activate **venv** before working on a project
+- **Type hints** on every variable and function
+- **Docstrings** on every function
+- **Return values** from functions (don't just print)
+- **Error handling** (try/except)
+- **Clean naming** (snake_case)
+- **PEP 8** compliance
+- **Guard clauses** for clean logic
+- **f-strings** for formatting
+- **Indentation** (consistent 4 spaces)
+- **venv always** (never work globally)
 
 ---
 
-## Goal
+## 🚀 Goal
 
-Complete Python foundation → **FastAPI** 🚀
+Complete Python foundation → **FastAPI Ready!** 🚀
