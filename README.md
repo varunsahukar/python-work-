@@ -31,7 +31,7 @@ graph TD
 | ✅ | `topic2_operators_and_expressions.py` | Operators & Expressions | Arithmetic, comparison, logical, identity, membership |
 | ✅ | `topic3_control_flow.py` | Control Flow | if/elif/else, for, while, break, continue, match |
 | ✅ | `topic4_functions.py` | Functions | Type hints, default params, *args, **kwargs, docstrings |
-| ⏳ | _coming soon_ | Data Structures | list, tuple, dict, set |
+| ✅ | `topic5_data_structures.py` | Data Structures | list, tuple, dict, set |
 | ⏳ | _coming soon_ | OOP | Classes, inheritance, super(), __str__ |
 | ⏳ | _coming soon_ | Error Handling | try/except/else/finally, custom exceptions |
 | ⏳ | _coming soon_ | File Handling | open, read, write, JSON |
@@ -47,6 +47,7 @@ python-work/
 ├── topic2_operators_and_expressions.py
 ├── topic3_control_flow.py
 ├── topic4_functions.py
+├── topic5_data_structures.py
 └── README.md
 ```
 
