@@ -32,7 +32,7 @@ graph TD
 | ✅ | `topic3_control_flow.py` | Control Flow | if/elif/else, for, while, break, continue, match |
 | ✅ | `topic4_functions.py` | Functions | Type hints, default params, *args, **kwargs, docstrings |
 | ✅ | `topic5_data_structures.py` | Data Structures | list, tuple, dict, set |
-| ⏳ | _coming soon_ | OOP | Classes, inheritance, super(), __str__ |
+| ✅ | `topic6_oop.py` | OOP | Classes, inheritance, super(), __str__ |
 | ⏳ | _coming soon_ | Error Handling | try/except/else/finally, custom exceptions |
 | ⏳ | _coming soon_ | File Handling | open, read, write, JSON |
 | ⏳ | _coming soon_ | Modules & Packages | import, __init__.py, project structure |
@@ -48,6 +48,7 @@ python-work/
 ├── topic3_control_flow.py
 ├── topic4_functions.py
 ├── topic5_data_structures.py
+├── topic6_oop.py
 └── README.md
 ```
 
