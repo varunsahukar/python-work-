@@ -35,7 +35,7 @@ graph TD
 | ✅ | `topic6_oop.py` | OOP | Classes, inheritance, super(), __str__ |
 | ✅ | `topic7_error_handling.py` | Error Handling | try/except/else/finally, custom exceptions |
 | ✅ | `topic8_file_handling.py` | File Handling | open, read, write, JSON |
-| ⏳ | _coming soon_ | Modules & Packages | import, __init__.py, project structure |
+| ✅ | `topic9_modules_and_packages.py` | Modules & Packages | import, __init__.py, project structure |
 | ⏳ | _coming soon_ | Venv & pip | virtualenv, pip, requirements.txt |
 | ⏳ | _coming soon_ | Clean Code | DRY, SRP, list comprehensions, Optional |
 
@@ -51,6 +51,10 @@ python-work/
 ├── topic6_oop.py
 ├── topic7_error_handling.py
 ├── topic8_file_handling.py
+├── topic9_modules_and_packages.py
+├── topic9_package/
+│   ├── __init__.py
+│   └── math_utils.py
 └── README.md
 ```
 
