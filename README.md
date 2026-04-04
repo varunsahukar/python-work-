@@ -36,7 +36,7 @@ graph TD
 | ✅ | `topic7_error_handling.py` | Error Handling | try/except/else/finally, custom exceptions |
 | ✅ | `topic8_file_handling.py` | File Handling | open, read, write, JSON |
 | ✅ | `topic9_modules_and_packages.py` | Modules & Packages | import, __init__.py, project structure |
-| ⏳ | _coming soon_ | Venv & pip | virtualenv, pip, requirements.txt |
+| ✅ | `topic10_venv_and_pip.py` | Venv & pip | virtualenv, pip, requirements.txt |
 | ⏳ | _coming soon_ | Clean Code | DRY, SRP, list comprehensions, Optional |
 
 ## 📂 Project Structure
@@ -55,6 +55,7 @@ python-work/
 ├── topic9_package/
 │   ├── __init__.py
 │   └── math_utils.py
+├── topic10_venv_and_pip.py
 └── README.md
 ```
 
