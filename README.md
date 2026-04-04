@@ -34,7 +34,7 @@ graph TD
 | ✅ | `topic5_data_structures.py` | Data Structures | list, tuple, dict, set |
 | ✅ | `topic6_oop.py` | OOP | Classes, inheritance, super(), __str__ |
 | ✅ | `topic7_error_handling.py` | Error Handling | try/except/else/finally, custom exceptions |
-| ⏳ | _coming soon_ | File Handling | open, read, write, JSON |
+| ✅ | `topic8_file_handling.py` | File Handling | open, read, write, JSON |
 | ⏳ | _coming soon_ | Modules & Packages | import, __init__.py, project structure |
 | ⏳ | _coming soon_ | Venv & pip | virtualenv, pip, requirements.txt |
 | ⏳ | _coming soon_ | Clean Code | DRY, SRP, list comprehensions, Optional |
@@ -50,6 +50,7 @@ python-work/
 ├── topic5_data_structures.py
 ├── topic6_oop.py
 ├── topic7_error_handling.py
+├── topic8_file_handling.py
 └── README.md
 ```
 
