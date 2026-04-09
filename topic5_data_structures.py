@@ -1,6 +1,6 @@
 """ 
 Topic 5: Data Structures 
-======================= 
+======================== 
 Covers: list, tuple, dict, set, list comprehensions 
 """ 
 
@@ -8,45 +8,51 @@ Covers: list, tuple, dict, set, list comprehensions
 # 1. Lists (Ordered, Mutable) 
 # ───────────────────────────────────────── 
 fruits: list[str] = ["apple", "banana", "cherry"] 
-fruits.append("orange") 
-print(f"Fruits: {fruits}") 
+fruits.append("orange")      # Add to end 
+fruits.insert(1, "mango")    # Add at index 
+fruits.remove("banana")      # Remove by value 
+popped = fruits.pop()        # Remove and return last item 
 
-# List Comprehension 
-squared_numbers = [x**2 for x in range(1, 6)] 
-print(f"Squared Numbers: {squared_numbers}") 
+print(f"Fruits: {fruits}") 
+print(f"Popped: {popped}") 
+
+# List Comprehension (Clean & Pythonic) 
+numbers = [1, 2, 3, 4, 5] 
+squares = [n**2 for n in numbers if n > 2] 
+print(f"Squares of n > 2: {squares}") 
 
 # ───────────────────────────────────────── 
 # 2. Tuples (Ordered, Immutable) 
 # ───────────────────────────────────────── 
-coordinates: tuple[float, float] = (10.5, 20.3) 
-print(f"Coordinates: {coordinates}") 
-# coordinates[0] = 11.0  # This would raise a TypeError 
+# Used for fixed data like coordinates 
+point: tuple[int, int] = (10, 20) 
+# point[0] = 15  # ❌ Error: Tuples cannot be changed 
+
+# Unpacking 
+x, y = point 
+print(f"X: {x}, Y: {y}") 
 
 # ───────────────────────────────────────── 
 # 3. Dictionaries (Key-Value Pairs, Mutable) 
 # ───────────────────────────────────────── 
-user: dict[str, str | int] = { 
+user: dict[str, any] = { 
     "name": "Arjun", 
     "age": 25, 
-    "city": "Mumbai" 
+    "is_student": True 
 } 
-print(f"User Name: {user['name']}") 
-user["role"] = "Developer" 
-print(f"User Info: {user}") 
+
+print(f"Name: {user.get('name')}") 
+user["email"] = "arjun@example.com"  # Add new key 
+
+# Iterating 
+for key, value in user.items(): 
+    print(f"{key}: {value}") 
 
 # ───────────────────────────────────────── 
 # 4. Sets (Unordered, Unique elements) 
 # ───────────────────────────────────────── 
-unique_numbers: set[int] = {1, 2, 2, 3, 4, 4, 5} 
-print(f"Unique Numbers: {unique_numbers}") # {1, 2, 3, 4, 5} 
-unique_numbers.add(6) 
-print(f"After adding 6: {unique_numbers}") 
+tags: set[str] = {"python", "coding", "fastapi", "python"} 
+print(f"Unique tags: {tags}")  # Only one 'python' 
 
-# ───────────────────────────────────────── 
-# 5. Common Operations 
-# ───────────────────────────────────────── 
-# Membership testing 
-print(f"Is 'apple' in fruits? {'apple' in fruits}") 
-
-# Length 
-print(f"Number of fruits: {len(fruits)}") 
+tags.add("backend") 
+print("fastapi" in tags)  # Fast membership check 
