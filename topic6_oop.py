@@ -1,65 +1,62 @@
 """ 
 Topic 6: Object-Oriented Programming (OOP) 
-========================================= 
-Covers: Classes, objects, __init__, methods, inheritance, super() 
+========================================== 
+Covers: class, init, self, methods, inheritance, super() 
 """ 
 
 # ───────────────────────────────────────── 
 # 1. Basic Class Definition 
 # ───────────────────────────────────────── 
-class Dog: 
-    """A simple class representing a dog.""" 
-     
-    # Class attribute 
-    species = "Canis familiaris" 
+class User: 
+    def __init__(self, username: str, email: str): 
+        self.username = username 
+        self.email = email 
 
-    def __init__(self, name: str, age: int): 
-        """Initialize name and age attributes.""" 
-        self.name = name 
-        self.age = age 
+    def greet(self) -> str: 
+        return f"Hello, I am {self.username}!" 
 
-    def bark(self) -> str: 
-        """Return a barking sound.""" 
-        return f"{self.name} says Woof!" 
-
+    # String representation (useful for debugging) 
     def __str__(self) -> str: 
-        """Return a string representation of the object.""" 
-        return f"{self.name} is {self.age} years old." 
+        return f"User({self.username}, {self.email})" 
 
-# Creating objects (instances) 
-my_dog = Dog("Buddy", 3) 
-print(my_dog) 
-print(my_dog.bark()) 
-print(f"Species: {my_dog.species}") 
+# Create instance 
+user1 = User("arjun_codes", "arjun@example.com") 
+print(user1.greet()) 
+print(user1) 
 
 # ───────────────────────────────────────── 
 # 2. Inheritance 
 # ───────────────────────────────────────── 
-class GoldenRetriever(Dog): 
-    """A specialized class inheriting from Dog.""" 
-     
-    def fetch(self, item: str) -> str: 
-        """Return a fetching message.""" 
-        return f"{self.name} is fetching the {item}!" 
+class Admin(User): 
+    def __init__(self, username: str, email: str, access_level: int): 
+        # super() calls the parent class constructor 
+        super().__init__(username, email) 
+        self.access_level = access_level 
 
-my_golden = GoldenRetriever("Goldie", 5) 
-print(my_golden) 
-print(my_golden.bark()) 
-print(my_golden.fetch("ball")) 
+    def delete_user(self, target_user: User) -> str: 
+        return f"Admin {self.username} deleted {target_user.username}" 
+
+admin1 = Admin("super_admin", "admin@site.com", 1) 
+print(admin1.greet()) 
+print(admin1.delete_user(user1)) 
 
 # ───────────────────────────────────────── 
-# 3. Using super() 
+# 3. Encapsulation (Private attributes) 
 # ───────────────────────────────────────── 
-class WorkingDog(Dog): 
-    """A class for dogs that have jobs.""" 
+class BankAccount: 
+    def __init__(self, owner: str, balance: float): 
+        self.owner = owner 
+        self.__balance = balance  # '__' makes it private 
 
-    def __init__(self, name: str, age: int, job: str): 
-        # Call the parent class __init__ 
-        super().__init__(name, age) 
-        self.job = job 
+    def deposit(self, amount: float): 
+        if amount > 0: 
+            self.__balance += amount 
+            print(f"Deposited {amount}. New balance: {self.__balance}") 
 
-    def __str__(self) -> str: 
-        return f"{super().__str__()} and works as a {self.job}." 
+    def get_balance(self) -> float: 
+        return self.__balance 
 
-service_dog = WorkingDog("Max", 4, "Service Dog") 
-print(service_dog) 
+account = BankAccount("Arjun", 1000) 
+account.deposit(500) 
+print(f"Final Balance: {account.get_balance()}") 
+# print(account.__balance)  # ❌ Error: Attribute is private 
