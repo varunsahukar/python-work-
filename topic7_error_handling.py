@@ -1,63 +1,52 @@
 """ 
 Topic 7: Error Handling 
-====================== 
-Covers: try, except, else, finally, raising exceptions, custom exceptions 
+======================= 
+Covers: try, except, else, finally, custom exceptions 
 """ 
 
 # ───────────────────────────────────────── 
-# 1. Basic try-except 
+# 1. Basic Try/Except Block 
 # ───────────────────────────────────────── 
 try: 
-    number = int(input("Enter a number: ")) 
-    result = 10 / number 
-    print(f"Result: {result}") 
+    number = int(input("Enter a number to divide 100 by: ")) 
+    result = 100 / number 
 except ValueError: 
-    print("Error: Please enter a valid integer.") 
+    print("❌ Error: You must enter a valid integer.") 
 except ZeroDivisionError: 
-    print("Error: Cannot divide by zero.") 
-
-# ───────────────────────────────────────── 
-# 2. try-except-else-finally 
-# ───────────────────────────────────────── 
-try: 
-    file = open("test.txt", "w") 
-    file.write("Hello, World!") 
-except IOError as e: 
-    print(f"An error occurred: {e}") 
+    print("❌ Error: Cannot divide by zero.") 
 else: 
-    print("File written successfully.") 
+    # Runs ONLY if no exception occurred 
+    print(f"Success! Result: {result}") 
 finally: 
-    # This block always runs 
-    if 'file' in locals() and not file.closed: 
-        file.close() 
-        print("File closed.") 
+    # Runs ALWAYS (e.g., closing a file or database connection) 
+    print("Operation complete.") 
 
 # ───────────────────────────────────────── 
-# 3. Raising Exceptions 
+# 2. Raising Exceptions 
 # ───────────────────────────────────────── 
-def check_age(age: int) -> None: 
+def set_age(age: int): 
     if age < 0: 
-        raise ValueError("Age cannot be negative.") 
-    print(f"Age is: {age}") 
+        raise ValueError("Age cannot be negative!") 
+    print(f"Age set to: {age}") 
 
 try: 
-    check_age(-5) 
+    set_age(-5) 
 except ValueError as e: 
-    print(f"Caught an exception: {e}") 
+    print(f"Caught an error: {e}") 
 
 # ───────────────────────────────────────── 
-# 4. Custom Exceptions 
+# 3. Custom Exceptions 
 # ───────────────────────────────────────── 
 class InsufficientFundsError(Exception): 
-    """Exception raised for errors in the withdrawal process.""" 
+    """Raised when account balance is too low.""" 
     pass 
 
-def withdraw(amount: float, balance: float) -> float: 
+def withdraw(balance: float, amount: float): 
     if amount > balance: 
-        raise InsufficientFundsError(f"Cannot withdraw {amount}, balance is {balance}.") 
+        raise InsufficientFundsError(f"Needed {amount}, but only have {balance}") 
     return balance - amount 
 
 try: 
-    new_balance = withdraw(100, 50) 
+    withdraw(100, 250) 
 except InsufficientFundsError as e: 
-    print(f"Error: {e}") 
+    print(f"Transaction failed: {e}") 
