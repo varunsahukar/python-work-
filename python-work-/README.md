@@ -17,27 +17,33 @@ graph TD
     7 --> 8(8. File Handling<br/>open, read, write, append, JSON)
     8 --> 9(9. Modules & Packages<br/>import, from, __init__.py, structure)
     9 --> 10(10. Venv & pip<br/>venv, pip install, requirements.txt)
-    10 --> 11(11. Pythonic Code & Clean Code Principles<br/>List comprehensions, DRY, SRP, type hints, Optional, meaningful names)
-    11 --> 12{FastAPI Ready! 🚀}
+    10 --> 11(11. Advanced Comprehensions<br/>dict, set, nested)
+    11 --> 12(12. Regular Expressions<br/>re.search, re.findall, re.sub)
+    12 --> 13(13. Date & Time<br/>datetime, strftime, strptime, timedelta)
+    13 --> 14(14. Introduction to Testing<br/>unittest, assertions)
+    14 --> 15{FastAPI Ready! 🚀}
 ```
 
 ---
 
 ## 📋 Topics Covered
 
-| Status | File | Topic | Key Concepts |
-|:---:|------|-------|--------------|
-| ✅ | `topic1_variables_and_datatypes.py` | Variables & Data Types | str, int, float, bool, None, f-strings, ternary |
-| ✅ | `topic2_operators_and_expressions.py` | Operators & Expressions | Arithmetic, comparison, logical, identity, membership |
-| ✅ | `topic3_control_flow.py` | Control Flow | if/elif/else, for, while, break, continue, match |
-| ✅ | `topic4_functions.py` | Functions | Type hints, default params, *args, **kwargs, docstrings |
-| ✅ | `topic5_data_structures.py` | Data Structures | list, tuple, dict, set |
-| ✅ | `topic6_oop.py` | OOP | Classes, inheritance, super(), __str__ |
-| ✅ | `topic7_error_handling.py` | Error Handling | try/except/else/finally, custom exceptions |
-| ✅ | `topic8_file_handling.py` | File Handling | open, read, write, JSON |
-| ✅ | `topic9_modules_and_packages.py` | Modules & Packages | import, __init__.py, project structure |
-| ✅ | `topic10_venv_and_pip.py` | Venv & pip | virtualenv, pip, requirements.txt |
-| ⏳ | _coming soon_ | Clean Code | DRY, SRP, list comprehensions, Optional |
+| Status | File                                  | Topic                   | Key Concepts                                               |
+| :----: | ------------------------------------- | ----------------------- | ---------------------------------------------------------- |
+|   ✅   | `topic1_variables_and_datatypes.py`   | Variables & Data Types  | str, int, float, bool, None, f-strings, ternary            |
+|   ✅   | `topic2_operators_and_expressions.py` | Operators & Expressions | Arithmetic, comparison, logical, identity, membership      |
+|   ✅   | `topic3_control_flow.py`              | Control Flow            | if/elif/else, for, while, break, continue, match           |
+|   ✅   | `topic4_functions.py`                 | Functions               | Type hints, default params, \*args, \*\*kwargs, docstrings |
+|   ✅   | `topic5_data_structures.py`           | Data Structures         | list, tuple, dict, set                                     |
+|   ✅   | `topic6_oop.py`                       | OOP                     | Classes, inheritance, super(), **str**                     |
+|   ✅   | `topic7_error_handling.py`            | Error Handling          | try/except/else/finally, custom exceptions                 |
+|   ✅   | `topic8_file_handling.py`             | File Handling           | open, read, write, JSON                                    |
+|   ✅   | `topic9_modules_and_packages.py`      | Modules & Packages      | import, **init**.py, project structure                     |
+|   ✅   | `topic10_venv_and_pip.py`             | Venv & pip              | virtualenv, pip, requirements.txt                          |
+|   ✅   | `topic11_advanced_comprehensions.py`  | Advanced Comprehensions | dict, set, nested comprehensions                           |
+|   ✅   | `topic12_regular_expressions.py`      | Regular Expressions     | re.search, re.findall, re.sub, match groups                |
+|   ✅   | `topic13_date_and_time.py`            | Date & Time             | datetime, strftime, strptime, timedelta                    |
+|   ✅   | `topic14_introduction_to_testing.py`  | Introduction to Testing | unittest, test cases, assertions                           |
 
 ## 📂 Project Structure
 
@@ -56,6 +62,10 @@ python-work/
 │   ├── __init__.py
 │   └── math_utils.py
 ├── topic10_venv_and_pip.py
+├── topic11_advanced_comprehensions.py
+├── topic12_regular_expressions.py
+├── topic13_date_and_time.py
+├── topic14_introduction_to_testing.py
 └── README.md
 ```
 
