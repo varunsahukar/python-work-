@@ -127,6 +127,14 @@ Adhering to a consistent set of coding standards is crucial for writing professi
 - **Virtual Environments:** Always use a virtual environment (e.g., `venv`) for every project to manage dependencies and avoid conflicts.
 - **Dependency Management:** Keep track of project dependencies in a `requirements.txt` file.
 
+### Common Pitfalls to Avoid
+
+- **Global Variables:** Avoid using global variables. They make code harder to reason about and can lead to unexpected side effects.
+- **Mutable Default Arguments:** Never use mutable objects (e.g., lists, dictionaries) as default arguments in functions. They persist across function calls and can cause unintended behavior.
+- **Ignoring Errors:** Do not silently ignore exceptions. Handle them gracefully or log them for debugging.
+- **Large Functions:** Keep functions small and focused on a single task. Long functions are difficult to read, test, and maintain.
+- **Magic Strings and Numbers:** Avoid using hardcoded "magic" values. Instead, define them as constants with descriptive names.
+
 ---
 
 ## 📚 Useful Resources
