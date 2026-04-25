@@ -104,6 +104,31 @@ python topic1_variables_and_datatypes.py
 
 ---
 
+## Python Coding Standards
+
+Adhering to a consistent set of coding standards is crucial for writing professional, maintainable, and collaborative Python code. This section outlines key principles and best practices to follow.
+
+### Core Principles
+
+- **Readability Counts:** Write code that is easy for other developers (and your future self) to read and understand. Follow the Zen of Python's mantra: "Readability counts."
+- **Consistency:** Maintain a consistent coding style throughout the project. This includes naming conventions, documentation, and structure.
+- **Explicitness:** Prefer explicit code over implicit magic. Code should be clear and its behavior predictable.
+- **Simplicity:** Strive for simplicity. Avoid unnecessary complexity and favor straightforward solutions.
+
+### Best Practices to Follow
+
+- **PEP 8 Compliance:** Adhere to the [PEP 8 style guide](https://peps.python.org/pep-0008/), the official style guide for Python code. Use a linter like `flake8` or `pylint` to enforce it automatically.
+- **Meaningful Naming:** Use descriptive and unambiguous names for variables, functions, and classes.
+  - `snake_case` for variables and functions (e.g., `user_profile`, `calculate_total`).
+  - `PascalCase` for classes (e.g., `UserProfile`, `DatabaseConnection`).
+- **Type Hinting:** Use type hints for all function signatures and critical variables. This improves code clarity, allows for static analysis, and helps prevent bugs.
+- **Docstrings:** Write clear and concise docstrings for all modules, functions, classes, and methods, following the [PEP 257](https://peps.python.org/pep-0257/) conventions.
+- **Modular Design:** Break down complex systems into smaller, reusable modules and functions. Each component should have a single, well-defined responsibility (Single Responsibility Principle).
+- **Virtual Environments:** Always use a virtual environment (e.g., `venv`) for every project to manage dependencies and avoid conflicts.
+- **Dependency Management:** Keep track of project dependencies in a `requirements.txt` file.
+
+---
+
 ## 📚 Useful Resources
 
 - [Official Python Documentation](https://docs.python.org/3/)
